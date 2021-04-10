@@ -1,6 +1,6 @@
 ## Sobre a API
 
-Este projeto é uma API desenvolvida como parte do teste para Desenvolvedor Java Remoto da META. É uma API para gerenciamento de contatos. Foi desenvolvida utilizando Java e Jersey.
+Este projeto é uma API desenvolvida como parte do teste para Desenvolvedor Java Remoto da META. É uma API para gerenciamento de contatos. Foi desenvolvida utilizando Java e Jersey. A URL da api é `/rest-contato/rest`
 
 ## Funcionalidades
 
@@ -80,3 +80,13 @@ Este projeto foi desenvolvida com as ferramentas:
 * **Maven**
 * **Jersey**
 * **Apache Tomcat 9** 
+
+### Execução
+
+Para executar a API, simplesmente execute:
+    
+```bash
+mvn org.codehaus.cargo:cargo-maven2-plugin:run
+```
+
+Por padrão, a API estará disponível em [http://localhost:8181/rest-contato/rest](http://localhost:8181/rest-contato/rest)
