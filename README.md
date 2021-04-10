@@ -76,7 +76,7 @@ Este endpoint retorna um contato especificado a partir do id informado.
 
 Este projeto foi desenvolvida com as ferramentas:
 
-* **Java 11 (Java Development Kit - JDK: 15.0.1)**
+* **Java 11**
 * **Maven**
 * **Jersey**
 * **Apache Tomcat 9** 
