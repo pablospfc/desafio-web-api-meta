@@ -2,7 +2,6 @@ package br.com.restcontato.rest;
 
 import java.util.List;
 import javax.annotation.PostConstruct;
-import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -12,7 +11,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import br.com.restcontato.entidade.Contato;
@@ -67,7 +65,7 @@ public class ContatoRest {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON + CHARSET_UTF8)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response adicionarContato(Contato contato, @Context HttpServletRequest req) throws ContatoException {
+	public Response adicionarContato(Contato contato) throws ContatoException {
 		try {
 			return Response.status(Response.Status.CREATED).entity(contatoService.create(contato)).build();
 		} catch (Exception ex) {
