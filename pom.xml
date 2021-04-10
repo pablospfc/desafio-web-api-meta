@@ -21,6 +21,26 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+
+        <plugin>
+            <groupId>org.codehaus.cargo</groupId>
+            <artifactId>cargo-maven2-plugin</artifactId>
+            <version>1.7.6</version>
+            <configuration>
+                <container>
+                    <containerId>tomcat9x</containerId>
+                    <type>embedded</type>
+                </container>
+                <configuration>
+                    <properties>
+                        <cargo.servlet.port>8181</cargo.servlet.port>
+                        <cargo.tomcat.ajp.port>8012</cargo.tomcat.ajp.port>
+                    </properties>
+                </configuration>
+            </configuration>
+
+        </plugin>
+
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
