@@ -58,7 +58,7 @@ Este endpoint retorna uma lista de contatos, limitando como proposto no desafio 
 
 `GET GET /rest-contato/rest/contato?size=10&page=0`
 
-Este endpoint retorna uma lista de veículos. Aceita algums parâmetros:
+Este endpoint retorna uma lista de contatos. Aceita algums parâmetros:
 
 `size` - total de registros por página
 
